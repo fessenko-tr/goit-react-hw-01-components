@@ -4,7 +4,7 @@ function Statistics({ title, stats }) {
       {title && <h2 class="title">{title}</h2>}
       <ul class="stat-list">
         {stats.map((e) => (
-          <li class="item" key={e.id}>
+          <li key={e.id} class="item">
             <span class="label">{e.label}</span>
             <span class="percentage">{e.percentage}</span>
           </li>
