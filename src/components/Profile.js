@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 function Profile({ username, tag, location, avatar, stats }) {
-  console.log("h test");
   return (
     <div class="profile">
       <div class="description">
