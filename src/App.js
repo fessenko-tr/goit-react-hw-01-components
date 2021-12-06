@@ -1,4 +1,3 @@
-import "./App.css";
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";
 import FriendList from "./components/FriendList/FriendList";
@@ -26,7 +25,7 @@ function App() {
 
       <Statistics title="Upload stats" stats={data} />
 
-      {/* <Statistics stats={data} /> */}
+      <Statistics stats={data} />
 
       <p>Задание 3 - Список друзей</p>
 
