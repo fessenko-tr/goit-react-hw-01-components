@@ -1,13 +1,13 @@
 import "./App.css";
-import Profile from "./components/Profile";
-import Statistics from "./components/Statistics";
-import FriendList from "./components/FriendList";
-import TransactionHistory from "./components/TransactionHistory";
+import Profile from "./components/Profile/Profile";
+import Statistics from "./components/Statistics/Statistics";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
-import friendsList from "./data/friends";
-import user from "./data/user";
-import data from "./data/statistics";
-import transactions from "./data/transactions";
+import friendsList from "./components/FriendList/friends";
+import user from "./components/Profile/user";
+import data from "./components/Statistics/data";
+import transactions from "./components/TransactionHistory/transactions";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
 
       <Statistics title="Upload stats" stats={data} />
 
-      <Statistics stats={data} />
+      {/* <Statistics stats={data} /> */}
 
       <p>Задание 3 - Список друзей</p>
 
